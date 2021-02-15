@@ -19,8 +19,10 @@ const SearchBar = ({ onSearch }) => {
 
     return (
         <form className='search-city-form' onSubmit={onSubmit}>
-            <label>City</label>
-            <input type='text' placeholder='Search City' value={city} onChange={(e) => setCity(e.target.value)}></input>
+            <div className='form-control'>
+                <label>City</label>
+                <input type='text' placeholder='Search City' value={city} onChange={(e) => setCity(e.target.value)}></input>
+            </div>
             <input className='btn btn-block' type='submit' value='Search' ></input>
         </form>
     )
