@@ -26,8 +26,15 @@ const  App = () => {
   //fetch weather results
   const fetchWeather = async (city) => {
     const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`);
-    const data = await res.json();
-    setWorldCitiesResults([data, ...worldCitiesResults]);
+    try {
+      if(!res.ok)
+        throw new Error();
+      const data = await res.json();
+      setWorldCitiesResults([data, ...worldCitiesResults]);
+    } catch (error) {
+      alert('City Not Found.')
+    }
+     
   }
 
   const fetchWorldCities = async () => {
