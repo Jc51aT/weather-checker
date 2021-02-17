@@ -8,6 +8,34 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  background-image: url('assets/chuttersnap-z8lvJsoOUvo-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.App{
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+.container {
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
 .header {
@@ -19,38 +47,53 @@ body {
 
 .title{
   text-align: center;
+  font-size: 70px;
 }
 
 .search-city-form{
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 3em;
+  text-align: center;
+  
+}
 
+.search-city-form btn{
+  justify-content: center;
 }
 
 .form-control {
-  margin: 20px 0;
+  margin: 20px ;
 }
 
 .form-control label {
-  display: block;
+  font-size: 40px;
+  margin-right: 10px;
 }
 
 .form-control input {
-  width: 25%;
+  width: 33%;
   height: 40px;
-  margin: 3px;
-  padding: 3px 7px;
+  margin-top: 3px;
   font-size: 17px;
 }
 
-.btn {
-  display: inline-block;
+.form-control .btn {
+  width: 20%;
   background: #000;
   color: #fff;
   border: none;
-  padding: 10px 20px;
-  margin: 5px;
-  border-radius: 5px;
+  height: 40px;
   cursor: pointer;
   text-decoration: none;
-  font-size: 15px;
   font-family: inherit;
 }
+
+.weather-temps{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+
+

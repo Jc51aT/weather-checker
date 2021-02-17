@@ -77,8 +77,10 @@ const  App = () => {
   //console.log(worldCitiesResults);
   return (
     <div className="App">
-      <h1 className="title">Weather Checker</h1>
-      <SearchBar onSearch={fetchWeather}/>
+      <div className='item'>
+        <h1 className="title">Weather Checker</h1>
+        <SearchBar onSearch={fetchWeather}/>
+      </div>
       <WorldWeather cities={worldCitiesResults}/>
     </div>
   );

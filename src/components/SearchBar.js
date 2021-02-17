@@ -22,8 +22,9 @@ const SearchBar = ({ onSearch }) => {
             <div className='form-control'>
                 <label>City</label>
                 <input type='text' placeholder='Search City' value={city} onChange={(e) => setCity(e.target.value)}></input>
+                <input className='btn' type='submit' value='Search' ></input>
             </div>
-            <input className='btn btn-block' type='submit' value='Search' ></input>
+
         </form>
     )
 }

@@ -7,7 +7,7 @@ const WorldWeather = ({ cities }) => {
     }
 
     return (
-        <div>
+        <div >
             {cities.map((city) => (
                 <CityWeather key={generateKey(city.name)} location={city.name} locationWeather={city}/>
             ))}
